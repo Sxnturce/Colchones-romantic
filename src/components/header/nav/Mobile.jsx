@@ -9,7 +9,7 @@ export default function Mobile({ isMove }) {
 					isMove ? "translate-x-0" : "translate-x-full"
 				} p-4 transition-all ease-in-out duration-300`}
 			>
-				<Links client:load isVisible={false} />
+				<Links client:load mobile={false} />
 				<Search show={false} />
 			</div>
 		</>

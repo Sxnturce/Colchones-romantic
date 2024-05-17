@@ -17,7 +17,7 @@ export default function Header() {
 				</div>
 				<nav className="w-full bg-white">
 					<div className="nav w-11/12 max-w-7xl mx-auto flex items-center justify-between py-4">
-						<Links isVisible={true} />
+						<Links mobile={true} />
 						<label
 							className="block custom-lg:hidden relative z-20"
 							onChange={changePosition}
@@ -30,7 +30,7 @@ export default function Header() {
 							</div>
 						</label>
 						<Mobile isMove={move} />
-						<Search show={true} />
+						<Search mobile={true} />
 					</div>
 				</nav>
 			</header>

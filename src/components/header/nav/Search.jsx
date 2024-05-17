@@ -1,9 +1,9 @@
-export default function Search({ show }) {
+export default function Search({ mobile }) {
 	return (
 		<>
 			<div
 				className={`flex items-center gap-8  ${
-					show ? "hidden custom-lg:flex" : "flex-col"
+					mobile ? "hidden custom-lg:flex" : "flex-col"
 				}`}
 			>
 				<div className="relative">

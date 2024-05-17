@@ -5,6 +5,12 @@ export default {
 		extend: {
 			colors: {
 				nav: '#E88C77',
+				fontHero: '#C83727',
+				font: '#474B57',
+				bgButton: '#E88C77',
+				bgButtonHover: '#C83727',
+				bgElipsis: '#FBD9D0',
+				bgCards: '#F6F6F6',
 			},
 			screens: {
 				'custom-lg': '1110px',

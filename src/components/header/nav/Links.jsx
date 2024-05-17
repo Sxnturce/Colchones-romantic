@@ -1,7 +1,7 @@
 import Category from "../Category/Category.jsx";
 import { useState, useEffect } from "react";
 
-function Links({ isVisible }) {
+function Links({ mobile }) {
 	const [show, setShow] = useState(false);
 	function showCategory() {
 		setShow(!show);
@@ -10,13 +10,13 @@ function Links({ isVisible }) {
 		<>
 			<div className="flex gap-12">
 				<img
-					className={`h-5 sm:h-7 ${!isVisible ? "hidden" : ""}`}
+					className={`h-5 sm:h-7 ${!mobile ? "hidden" : ""}`}
 					src="./logoRomantib-webp.webp"
 					alt="Colchones logo"
 				/>
 				<ul
 					className={`gap-6 text-gray-500 items-center ${
-						isVisible ? "hidden md:flex" : "flex flex-col gap-12"
+						mobile ? "hidden md:flex" : "flex flex-col gap-12"
 					}`}
 				>
 					<li className="hover:text-black transition-all ease duration-200">
