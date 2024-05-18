@@ -6,7 +6,7 @@ export default {
 			colors: {
 				nav: '#E88C77',
 				fontHero: '#C83727',
-				font: '#474B57',
+				font: '#878A92',
 				bgButton: '#E88C77',
 				bgButtonHover: '#C83727',
 				bgElipsis: '#FBD9D0',

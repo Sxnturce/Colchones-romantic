@@ -1,0 +1,17 @@
+---
+const { image, alt, info, stock, price } = Astro.props;
+---
+
+<div class="bg-bgCards flex flex-col items-center p-3 gap-4 rounded-sm">
+	<img src={`./item-${image}.png`} alt={alt} class="object-contain" />
+	<p class="text-lg text-center h-[60px]">{info}</p>
+	<div class="flex justify-evenly items-center w-full">
+		<a
+			href="#"
+			class={`text-white font-semibold py-1 px-2 rounded-md ${
+				stock ? "bg-green-500" : "bg-red-500"
+			}`}>In Stock</a
+		>
+		<p class="text-font font-semibold">S/ {price}</p>
+	</div>
+</div>

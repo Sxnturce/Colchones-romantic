@@ -1,0 +1,28 @@
+---
+import Card from "./Card.astro";
+import { cards } from "./cards.js";
+---
+
+<section class="w-11/12 max-w-7xl mx-auto flex flex-col gap-8">
+	<div class="w-full flex flex-col gap-3">
+		<h3 class="text-3xl font-bold text-fontHero text-center">
+			Aprovecha nuestras ofertas
+		</h3>
+		<p class="text-center text-font">Lo mas vendido</p>
+	</div>
+	<div
+		class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
+	>
+		{
+			cards.map((card) => (
+				<Card
+					image={card.image}
+					alt={card.alt}
+					info={card.info}
+					stock={card.stock}
+					price={card.price}
+				/>
+			))
+		}
+	</div>
+</section>
