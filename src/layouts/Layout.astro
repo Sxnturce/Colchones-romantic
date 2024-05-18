@@ -1,5 +1,6 @@
 ---
 import Header from "../components/header/Header.jsx";
+import Footer from "../components/footer/Footer.astro";
 
 interface Props {
 	title: string;
@@ -27,6 +28,7 @@ const { title } = Astro.props;
 		<main class="w-full flex flex-col gap-20">
 			<slot />
 		</main>
+		<Footer />
 	</body>
 </html>
 

@@ -24,7 +24,7 @@ export default function Search({ mobile }) {
 						<path d="M21 21l-6 -6"></path>
 					</svg>
 					<input
-						className="search outline-none px-4 py-1 rounded-md text-center border-2 border-gray-200 focus:ring-gray-500 focus:border-2"
+						className="search outline-none px-4 py-1 rounded-md text-center border-2 border-gray-200 focus:border-red-400 transition-all ease-in-out duration-200"
 						type="text"
 						placeholder="Buscar productos"
 					/>

@@ -5,6 +5,7 @@ import InfoCards from "../components/mainCards/InfoCards.astro";
 import Cards from "../components/cards/Cards.astro";
 import HeroBody from "../components/hero/HeroBody.astro";
 import Overlay from "../components/overlay/Overlay.astro";
+import Suscribe from "../components/suscribe/Suscribe.jsx";
 ---
 
 <Layout title="Colchones Romantic">
@@ -13,4 +14,5 @@ import Overlay from "../components/overlay/Overlay.astro";
 	<Cards />
 	<HeroBody />
 	<Overlay />
+	<Suscribe client:load />
 </Layout>

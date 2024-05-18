@@ -10,7 +10,7 @@ const { image, alt, info, stock, price } = Astro.props;
 			href="#"
 			class={`text-white font-semibold py-1 px-2 rounded-md ${
 				stock ? "bg-green-500" : "bg-red-500"
-			}`}>In Stock</a
+			}`}>{stock ? "En stock" : "Agotado"}</a
 		>
 		<p class="text-font font-semibold">S/ {price}</p>
 	</div>
