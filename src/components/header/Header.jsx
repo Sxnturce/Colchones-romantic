@@ -2,6 +2,7 @@ import Search from "./nav/Search.jsx";
 import Links from "./nav/Links.jsx";
 import Mobile from "./nav/Mobile.jsx";
 import { useState } from "react";
+
 export default function Header() {
 	const [move, setMove] = useState(false);
 	function changePosition() {
@@ -9,9 +10,9 @@ export default function Header() {
 	}
 	return (
 		<>
-			<header className="w-full">
+			<header className="w-full fixed z-20">
 				<div className="bg-nav">
-					<h1 className="text-center font-semibold py-1 text-white">
+					<h1 className="text-center  py-1 text-white">
 						Obtén un 25% de descuento en tu primer pedido
 					</h1>
 				</div>
@@ -19,7 +20,7 @@ export default function Header() {
 					<div className="nav w-11/12 max-w-7xl mx-auto flex items-center justify-between py-4">
 						<Links mobile={true} />
 						<label
-							className="block custom-lg:hidden relative z-20"
+							className="block custom-lg:hidden relative z-20 burger"
 							onChange={changePosition}
 						>
 							<div className="w-9 h-10 cursor-pointer flex flex-col items-center justify-center">
