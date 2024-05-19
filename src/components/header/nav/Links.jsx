@@ -9,11 +9,15 @@ function Links({ mobile }) {
 	return (
 		<>
 			<div className="flex gap-12">
-				<img
-					className={`h-5 sm:h-7 ${!mobile ? "hidden" : ""}`}
-					src="./logoRomantib-webp.webp"
-					alt="Colchones logo"
-				/>
+				{!mobile ? null : (
+					<a href="/">
+						<img
+							className={`h-5 sm:h-7`}
+							src="/src/assets/img/logoRomantib-webp.webp"
+							alt="Colchones logo"
+						/>
+					</a>
+				)}
 				<ul
 					className={`gap-6 text-gray-500 items-center ${
 						mobile ? "hidden md:flex" : "flex flex-col gap-12"
@@ -23,17 +27,14 @@ function Links({ mobile }) {
 						<a href="/">Home</a>
 					</li>
 					<li className="relative" onClick={showCategory}>
-						<a
-							href="#"
-							className="flex items-center hover:text-black transition-all ease duration-200 "
-						>
+						<span className="flex items-center hover:text-black transition-all ease duration-200 cursor-pointer">
 							Categorias
 							<i
 								className={`bx bx-chevron-down ml-1 ${
 									show ? "rotate-180" : "rotate-0"
 								}`}
 							></i>
-						</a>
+						</span>
 						<Category show={show} />
 					</li>
 					<li className="hover:text-black transition-all ease duration-200">
