@@ -1,7 +1,13 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import Suscribe from "../../components/suscribe/Suscribe";
+import Cards from "../../components/cards/Cards.astro";
+import Product from "../../components/product/Product.astro";
+//Fake data for testing
 ---
 
 <Layout title="Colchones Romantic">
-	<h1>Producto</h1>
+	<Product />
+	<Cards title="Tambien te puede gustar" subtitle="Productos similares" />
+	<Suscribe />
 </Layout>

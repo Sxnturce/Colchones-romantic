@@ -1,0 +1,29 @@
+---
+//Fake data for testing
+import { cards } from "../../components/cards/cards.js";
+import Info from "../../components/product/info/Info.jsx";
+---
+
+<section
+	class="w-11/12 max-w-7xl mx-auto grid grid-cols-1 custom-lg:grid-cols-[1.25fr_1fr] mt-[100px] gap-12 items-center"
+>
+	<div class="p-6">
+		<img
+			src="/src/assets/img/item-1-wp.webp"
+			alt="Colchon producto"
+			class="w-full object-contain"
+		/>
+	</div>
+	{
+		(
+			<Info
+				client:load
+				title={cards[0].title}
+				price={cards[0].price}
+				stock={cards[0].stock}
+				description={cards[0].description}
+				size={cards[0].size}
+			/>
+		)
+	}
+</section>

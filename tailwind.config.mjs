@@ -11,6 +11,7 @@ export default {
 				bgButtonHover: '#C83727',
 				bgElipsis: '#FBD9D0',
 				bgCards: '#F6F6F6',
+				fontProduct: '#5c5f6a'
 			},
 			screens: {
 				'custom-lg': '1110px',
