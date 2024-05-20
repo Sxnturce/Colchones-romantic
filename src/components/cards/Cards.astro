@@ -1,30 +1,35 @@
 ---
 import Card from "./Card.astro";
-import { cards } from "../../db/cards.js";
+import { cards } from "../../db/db.js";
 
-const { title, subtitle } = Astro.props;
+const { title, subtitle, maxCards, show } = Astro.props;
 ---
 
-<section class="w-11/12 max-w-7xl mx-auto flex flex-col gap-8">
-	<div class="w-full flex flex-col gap-3">
-		<h3 class="text-3xl font-bold text-fontHero text-center">
-			{title}
-		</h3>
-		<p class="text-center text-font">{subtitle}</p>
-	</div>
+<section class={`w-11/12 max-w-7xl mx-auto flex flex-col gap-8`}>
+	{
+		show && (
+			<div class="w-full flex flex-col gap-3">
+				<h3 class="text-3xl font-bold text-fontHero text-center">{title}</h3>
+				<p class="text-center text-font">{subtitle}</p>
+			</div>
+		)
+	}
 	<div
-		class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
+		class={`w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ${!show ? "gap-x-6 gap-y-12" : "gap-4"}`}
 	>
 		{
-			cards.map((card) => (
-				<Card
-					image={card.image}
-					alt={card.alt}
-					info={card.title}
-					stock={card.stock}
-					price={card.price}
-				/>
-			))
+			cards.map(
+				(card, index) =>
+					index < maxCards && (
+						<Card
+							image={card.image}
+							alt={card.alt}
+							info={card.title}
+							stock={card.stock}
+							price={card.price}
+						/>
+					)
+			)
 		}
 	</div>
 </section>

@@ -1,0 +1,33 @@
+---
+import Confort from "./content/Confort.astro";
+---
+
+<aside
+	class="flex flex-col gap-4 border-[1px] rounded-sm p-4 lg:max-h-[500px] bg-[#fdfdfd] w-full"
+>
+	<h2 class="text-lg font-semibold">Categorias</h2>
+	<div class="flex gap-2 flex-col text-sm">
+		<div class="flex items-center gap-2 border-b p-2 text-fontProduct">
+			<input type="checkbox" id="Osmio" />
+			<label for="Osmio" class="select-none cursor-pointer">Osmio</label>
+		</div>
+		<div class="flex items-center gap-2 border-b p-2 text-fontProduct">
+			<input type="checkbox" id="Paladio" />
+			<label for="Paladio" class="select-none cursor-pointer">Paladio</label>
+		</div>
+		<div class="flex items-center gap-2 border-b p-2 text-fontProduct">
+			<input type="checkbox" id="Platino" />
+			<label for="Platino" class="select-none cursor-pointer">Platino</label>
+		</div>
+		<div class="flex items-center gap-2 border-b p-2 text-fontProduct">
+			<input type="checkbox" id="Neo" />
+			<label for="Neo" class="select-none cursor-pointer">Neo</label>
+		</div>
+		<div class="flex items-center gap-2 border-b p-2 text-fontProduct">
+			<input type="checkbox" id="Diletto" />
+			<label for="Diletto" class="select-none cursor-pointer">Diletto</label>
+		</div>
+	</div>
+
+	<Confort />
+</aside>

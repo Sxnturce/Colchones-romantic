@@ -10,7 +10,7 @@ function Links({ mobile }) {
 		<>
 			<div className="flex gap-12">
 				{!mobile ? null : (
-					<a href="/">
+					<a href="/" className="select-none">
 						<img
 							className={`h-5 sm:h-7`}
 							src="/src/assets/img/logoRomantib-webp.webp"

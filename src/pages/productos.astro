@@ -1,0 +1,23 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Cards from "../components/cards/Cards.astro";
+import Aside from "../components/aside/Aside.astro";
+import Counter from "../components/aside/content/Counter.astro";
+---
+
+<Layout title="Colchones Romantic">
+	<section
+		class="w-11/12 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1fr_5fr] mt-[120px]"
+	>
+		<Aside />
+		<div class="flex flex-col gap-12">
+			<Cards
+				title="Tambien te puede gustar"
+				subtitle="Productos similares"
+				maxCards={12}
+				show={false}
+			/>
+			<Counter />
+		</div>
+	</section>
+</Layout>

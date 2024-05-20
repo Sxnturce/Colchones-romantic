@@ -3,10 +3,17 @@ import Layout from "../../layouts/Layout.astro";
 import Suscribe from "../../components/suscribe/Suscribe";
 import Cards from "../../components/cards/Cards.astro";
 import Product from "../../components/product/Product.astro";
+import Details from "../../components/details/Details";
 ---
 
 <Layout title="Colchones Romantic">
 	<Product />
-	<Cards title="Tambien te puede gustar" subtitle="Productos similares" />
+	<Details client:load />
+	<Cards
+		title="Tambien te puede gustar"
+		subtitle="Productos similares"
+		maxCards={4}
+		show={true}
+	/>
 	<Suscribe />
 </Layout>

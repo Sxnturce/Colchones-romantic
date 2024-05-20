@@ -2,7 +2,9 @@
 const { image, alt, info, stock, price } = Astro.props;
 ---
 
-<div class="bg-bgCards flex flex-col items-center p-3 gap-4 rounded-sm">
+<div
+	class="bg-bgCards flex flex-col items-center p-3 gap-4 rounded-s cursor-pointer hover:scale-[1.035] hover:shadow-md transition-all ease-in duration-200"
+>
 	<a href="/producto/id">
 		<img
 			src={`/src/assets/img/item-${image}.png`}
@@ -10,11 +12,11 @@ const { image, alt, info, stock, price } = Astro.props;
 			class="object-contain"
 		/>
 	</a>
-	<p class="text-lg text-center h-[60px]">{info}</p>
+	<p class="text-[1rem] font-[500] text-center h-[60px]">{info}</p>
 	<div class="flex justify-evenly items-center w-full">
 		<a
 			href="#"
-			class={`text-white font-semibold py-1 px-2 rounded-md ${
+			class={`text-white text-sm font-[500] py-1 px-2 rounded-md ${
 				stock ? "bg-green-500" : "bg-red-500"
 			}`}>{stock ? "En stock" : "Agotado"}</a
 		>

@@ -11,7 +11,12 @@ import Suscribe from "../components/suscribe/Suscribe.jsx";
 <Layout title="Colchones Romantic">
 	<Hero />
 	<InfoCards />
-	<Cards title="Aprovecha nuestras ofertas" subtitle="Los mas vendidos" />
+	<Cards
+		title="Aprovecha nuestras ofertas"
+		subtitle="Los mas vendidos"
+		maxCards={4}
+		show={true}
+	/>
 	<HeroBody />
 	<Overlay />
 	<Suscribe client:load />
