@@ -51,21 +51,21 @@ export default function Info({ title, price, stock, description, size }) {
 					<h3 className="uppercase text-fontProduct text-[0.8rem] text-center custom-md:text-left ">
 						Cantidad
 					</h3>
-					<div className="flex text-xl text-fontProduct font-semibold ">
+					<div className="flex text-[1rem] text-fontProduct font-semibold ">
 						<span
-							className="cursor-pointer border-[1px] border-[#E6E7E8] py-1 px-4 rounded-l rounded-tl rounded-bl hover:bg-red-500 hover:border-red-500 hover:text-white transition-all ease-in-out duration-200"
+							className="cursor-pointer border-[1px] border-[#E6E7E8] py-1 px-4 rounded-l rounded-tl rounded-bl hover:bg-red-500 hover:border-red-500 hover:text-white transition-all ease-in-out duration-200 flex items-center justify-center"
 							onClick={reductValue}
 						>
-							-
+							<i className="fa-solid fa-minus"></i>
 						</span>
 						<span className="border-t-[1px] border-b-[1px] text-lg  border-[#E6E7E8] py-1 px-4 ">
 							{value}
 						</span>
 						<span
-							className="cursor-pointer border-[1px] border-[#E6E7E8] py-1 px-4 rounded-r rounded-tr rounded-br hover:bg-red-500 hover:border-red-500 hover:text-white transition-all ease-in-out duration-200"
+							className="cursor-pointer border-[1px] border-[#E6E7E8] py-1 px-4 rounded-r rounded-tr rounded-br hover:bg-green-600 hover:border-green-600 hover:text-white transition-all ease-in-out duration-200 flex items-center justify-center"
 							onClick={addValue}
 						>
-							+
+							<i className="fa-solid fa-plus"></i>
 						</span>
 					</div>
 				</div>
