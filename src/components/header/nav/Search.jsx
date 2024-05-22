@@ -30,7 +30,7 @@ export default function Search({ mobile }) {
 					/>
 				</div>
 				<div className="flex items-center gap-4">
-					<a href="/">
+					<a href="/carrito/pago">
 						<svg
 							className="hover:text-black transition-all ease duration-200"
 							width="26"
