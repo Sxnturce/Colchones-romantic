@@ -1,0 +1,73 @@
+---
+import Info from "./Info.astro";
+---
+
+<div class="flex flex-col gap-4 py-4 lg:px-8 px-4 lg:min-h-screen">
+	<h2 class="font-semibold text-lg">Direccion de envio</h2>
+	<form action="" class="flex flex-col gap-4">
+		<Info
+			label="address"
+			text="Direccion"
+			type="text"
+			id="address"
+			placeholder="Direccion"
+		/>
+		<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+			<Info
+				label="city"
+				text="Ciudad"
+				type="text"
+				id="city"
+				placeholder="Ciudad"
+			/>
+			<Info
+				label="phone"
+				text="Celular"
+				type="text"
+				id="phone"
+				placeholder="999 888 777"
+			/>
+		</div>
+		<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+			<Info
+				label="Email"
+				text="Email"
+				type="text"
+				id="email"
+				placeholder="prueba@prueba"
+			/>
+			<Info
+				label="name"
+				text="Nombre"
+				type="text"
+				id="name"
+				placeholder="Nombre"
+			/>
+		</div>
+		<h2 class="font-semibold text-lg">Pago</h2>
+		<Info
+			label="target"
+			text="Tarjeta de credito o debito"
+			type="text"
+			id="target"
+			placeholder="5555 5555 5555 5555"
+		/>
+		<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+			<Info
+				label="expiry"
+				text="Fecha de expiracion"
+				type="text"
+				id="expiry"
+				placeholder="MM/YY"
+			/>
+			<Info label="cvv" text="CVV" type="text" id="cvv" placeholder="CVV" />
+		</div>
+		<Info
+			label="titular"
+			text="Titular de la tarjeta"
+			type="text"
+			id="titular"
+			placeholder="Titular de la tarjeta"
+		/>
+	</form>
+</div>

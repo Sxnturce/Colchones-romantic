@@ -1,0 +1,31 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="404 Not Found">
+	<div
+		class="w-11/12 max-w-7xl mx-auto mt-[120px] grid grid-cols-1 lg:grid-cols-2"
+	>
+		<div class="flex flex-col gap-6 justify-center lg:items-start items-center">
+			<h1 class="text-3xl md:text-5xl font-bold text-gray-400">
+				404 - ERROR PAGE
+			</h1>
+			<p class="text-2xl md:text-3xl font-bold text-gray-300">
+				Página no encontrada
+			</p>
+			<a
+				href="/"
+				class="text-lg py-1 px-2 border-[1px] border-blue-400 rounded-md font-semibold max-w-max text-blue-400 hover:bg-blue-500 hover:text-white transition-all ease-in-out duration-200"
+			>
+				Volver a la página principal</a
+			>
+		</div>
+		<div>
+			<img
+				src="src/assets/img/giphy.gif"
+				alt=""
+				class="w-full block max-w-[480px] object-contain mx-auto"
+			/>
+		</div>
+	</div>
+</Layout>

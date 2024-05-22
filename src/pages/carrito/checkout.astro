@@ -1,6 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Form from "../../components/carrito/Form.astro";
+import Form from "../../components/carrito/form/Form.astro";
 import Payment from "../../components/carrito/Payment.astro";
 
 const pedido = true;
@@ -22,7 +22,7 @@ const pedido = true;
 				<hr />
 				<Payment title="Total" price="4,764.60" isbold={true} />
 				<a
-					href="/"
+					href="/carrito/success"
 					class="w-full bg-neutral-800 text-white py-2 text-center rounded-sm hover:bg-neutral-700 transition-all ease-in-out duration-200"
 					>{pedido ? "Realizar pedido" : "Pagar"}</a
 				>
