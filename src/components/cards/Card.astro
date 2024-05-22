@@ -9,7 +9,7 @@ const { image, alt, info, stock, price } = Astro.props;
 		<img
 			src={`/src/assets/img/item-${image}.png`}
 			alt={alt}
-			class="object-contain"
+			class="object-contain aspect-[1.5/1]"
 		/>
 	</a>
 	<p class="text-[1rem] font-[500] text-center h-[60px]">{info}</p>
