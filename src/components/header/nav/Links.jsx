@@ -41,7 +41,7 @@ function Links({ mobile }) {
 						<a href="/">About</a>
 					</li>
 					<li className="hover:text-black transition-all ease duration-200">
-						<a href="/">Contactos</a>
+						<a href="/#footer">Contactos</a>
 					</li>
 				</ul>
 			</div>

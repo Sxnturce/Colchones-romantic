@@ -1,16 +1,14 @@
 ---
 import Cards from "./Cards.astro";
-import {features} from "./info.js";
+import { features } from "./info.js";
 ---
 
-<section class="w-11/12 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-{
-	features.map((card) => (
-		<Cards
-			ico={card.ico}
-			title={card.title}
-			info={card.info}
-		/>
-	))
-}
+<section
+	class="w-11/12 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+>
+	{
+		features.map((card) => (
+			<Cards ico={card.ico} title={card.title} info={card.info} />
+		))
+	}
 </section>
