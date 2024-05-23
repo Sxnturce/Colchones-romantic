@@ -13,7 +13,7 @@ function Links({ mobile }) {
 					<a href="/" className="select-none">
 						<img
 							className={`h-5 sm:h-7`}
-							src="/src/assets/img/logoRomantib-webp.webp"
+							src="/img/logoRomantib-webp.webp"
 							alt="Colchones logo"
 						/>
 					</a>
