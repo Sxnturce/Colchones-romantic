@@ -19,8 +19,8 @@ function Links({ mobile }) {
 					</a>
 				)}
 				<ul
-					className={`gap-6 text-gray-500 items-center ${
-						mobile ? "hidden md:flex" : "flex flex-col gap-12"
+					className={` text-gray-500 items-center ${
+						mobile ? "hidden md:flex md:gap-6" : "flex flex-col gap-12"
 					}`}
 				>
 					<li className="hover:text-black transition-all ease duration-200">
