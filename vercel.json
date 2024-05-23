@@ -3,16 +3,13 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/node"
+      "use": "@vercel/node",
+      "output": {
+        "/dist/assets/img/*": "src/assets/img/*"
+      }
     }
   ],
   "routes": [],
   "rewrites": [],
-  "redirects": [],
-  "files": [
-    {
-      "source": "src/assets/img/(.*)",
-      "destination": "/dist/assets/img/$1"
-    }
-  ]
+  "redirects": []
 }
