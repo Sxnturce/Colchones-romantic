@@ -3,10 +3,10 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "build:css": "tailwindcss -i ./src/styles/index.css -o ./dist/styles.css --minify",
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build:css": "tailwindcss ./src/styles/index.css -o ./dist/styles.css --minify",
+    "build": "astro check && astro build && npm run build:css",
     "preview": "astro preview",
     "astro": "astro"
   },
